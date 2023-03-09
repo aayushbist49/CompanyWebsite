@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container2 container container3">
+        <div class="content_contact">
+            <div class="text_contact">
+                <h1 class="heading">Have a question? <br> Contact Us.</h1>
+                <form>
+                    <h2>Your name</h2>
+                    <input type="text" id="name"> <br><br>
+                    <h2>Your email</h2>
+                    <input type="email" id="email">
+                    <br><br>
+                    <h2>Your message</h2>
+                    <br>
+                    <textarea id="message" cols="30" rows="2"></textarea>
+                    <div class="submit">
+                        <input type="submit">
+                    </div>
+                </form>
+            </div>
+            <div class="img_contact">
+                <img class="animated_img" src="aayush_green.jpg" alt="">
+            </div>
+        </div>
+        <div class="icons">
+            <div class="insta common_icon_class">
+                <a href="https://instagram.com/aayush___bist?igshid=Mzc0YWU1OWY=" target="_blank"><img class="icon"
+                        src="https://cdn-icons-png.flaticon.com/512/717/717414.png" alt=""></a>
+            </div>
+            <div class="github common_icon_class">
+                <a href="https://github.com/aayushbist49"><img class="gut icon"
+                        src="https://cdn-icons-png.flaticon.com/512/4926/4926624.png" alt=""></a>
+            </div>
+            <div class="linkedin common_icon_class">
+                <a href="https://www.linkedin.com/in/aayush-bist-ba79b524a/"><img class="icon"
+                        src="https://cdn-icons-png.flaticon.com/512/2111/2111532.png" alt=""></a>
+            </div>
+            <div class="twitter common_icon_class">
+                <a href="https://twitter.com/AayushBist123?t=Lld73_07x5k86yGL50N8ig&s=09"><img class="icon"
+                        src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendMessage()
+        {
+Email.send(
+    {
+        Host : "smtp.gmail.com",
+        Username: "bistaayush49@gmail.com",
+        Password: "password",
+        To: 'bistaayush49@gmail.com',
+        From: document.getElementById("email").value,
+        Subject: "New email from my website"
+    }
+).then(
+    message => alert(Sent)
+);
+        }
+    </script>
+</body>
+
+</html>
