@@ -117,9 +117,9 @@ li:hover {
     position: relative;
     left: 2vw;
     border-radius: 1.5rem;
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
+    align-content: space-between; */
 }
 
 .two h1 {
@@ -155,20 +155,14 @@ li:hover {
 }
 
 .circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 6vw;
-    width: 6vw;
-    border-radius: 100%;
-    background-color: rgba(223, 198, 198, 0.305);
-    z-index: 1;
-    position: absolute;
-    top: 56vh;
-    left: 19vh;
+    
     border: 2px solid white;
     transition: 0.5s;
-    transform: rotate(-10deg);
+    width: 200px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    background-color: #fd6f56;
+
 }
 
 .circle:hover {
