@@ -117,19 +117,21 @@ li:hover {
     position: relative;
     left: 2vw;
     border-radius: 1.5rem;
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
+    align-content: space-between; */
 }
 
 .two h1 {
     padding: 1rem;
     font-size: 4vh;
+    margin: 25px 0;
 }
 
 .two p {
     padding: 1rem;
     font-size: 2vh;
+    margin-top: 25px;
 }
 
 .three {
@@ -154,30 +156,25 @@ li:hover {
     overflow: hidden;
 }
 
-.circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 6vw;
-    width: 6vw;
-    border-radius: 100%;
-    background-color: rgba(223, 198, 198, 0.305);
-    z-index: 1;
-    position: absolute;
-    top: 56vh;
-    left: 19vh;
+.btn {
+    text-align: center;
+    width: 220px;
+    padding: 15px 25px;
+    background-color: rgb(253, 115, 35);
     border: 2px solid white;
     transition: 0.5s;
-    transform: rotate(-10deg);
+    border-radius: 5px;
+    margin-left: 25px;
+
 }
 
-.circle:hover {
+.btn:hover {
     background-color: black;
     color: #DFDFDE;
     border: 2px solid gainsboro;
 }
 
-.circle h3 a {
+.btn h3 a {
     color: white;
     opacity: 1;
     font-size: 1vw;
